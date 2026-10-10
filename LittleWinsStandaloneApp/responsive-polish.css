@@ -1,0 +1,202 @@
+/* Shared responsive rules for the companion app. */
+@media (min-width: 1000px) {
+  main { width: min(calc(100% - 80px), 1480px); }
+  .compact-header .header-planner-nav { grid-template-columns: repeat(5,minmax(0,1fr)); }
+  #today-content > .section-head { max-width: 1360px; margin-left: auto; margin-right: auto; }
+  .things-to-do-grid { max-width: 1360px; margin-left: auto; margin-right: auto; }
+  .daily-plan, .task-sidecards > .card { padding: 28px; }
+  #stage-panel.stage { max-width: 1360px; margin-left: auto; margin-right: auto; }
+  .child-tools-nav { max-width: 1080px; }
+  .activity-grid { grid-template-columns: repeat(2,minmax(0,1fr))!important; }
+}
+@media (min-width: 1440px) {
+  #today-content > .section-head, .things-to-do-grid, #stage-panel.stage { max-width: 1400px; }
+  .activity-grid { grid-template-columns: repeat(3,minmax(0,1fr))!important; }
+}
+
+/* Tablet: keep the main destinations in a compact three-column grid. */
+@media (min-width: 601px) and (max-width: 999px) {
+  main { width: min(calc(100% - 40px), 960px); padding: 28px 0 44px; }
+  .compact-header { padding: 20px 28px; gap: 12px 18px; }
+  .compact-header .header-planner-nav {
+    display: grid!important; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px!important;
+    padding: 10px; background: #fff7fa; border: 1px solid #f0d7e1; border-radius: 16px;
+  }
+  .compact-header .header-planner-nav>:nth-child(4) { grid-column: 2; }
+  .compact-header .header-planner-nav>:nth-child(5) { grid-column: 3; }
+  .compact-header .header-planner-nav>button,
+  .compact-header .header-planner-nav>a,
+  .compact-header .header-planner-nav>a.header-packages {
+    width: 100%; max-width: none!important; min-height: 96px; padding: 10px 8px 14px;
+    display: flex; flex-direction: column; justify-content: center; gap: 6px;
+    background: #fff!important; border: 1px solid #f0e0e7!important; border-radius: 11px;
+    color: #842145!important; box-shadow: none!important;
+  }
+  .compact-header .header-planner-nav .nav-description { display: none; }
+  .compact-header .header-planner-nav .header-nav-icon { width: 25px; height: 25px; }
+  .compact-header .header-planner-nav .header-nav-label { min-height: 0; font-size: 14px; line-height: 1.35; }
+  .compact-header .header-planner-nav>a.header-packages { background: #bd215b!important; color: white!important; border-color: #bd215b!important; }
+  .compact-header .header-planner-nav>a.header-packages .header-nav-icon { stroke: white; }
+  .app-parent-header { max-width: 900px; height: clamp(230px,35vw,310px); margin-left: auto; margin-right: auto; }
+  .planner-parent-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+  .intro:has(.restored-motivation) { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 900px; margin: 0 auto 18px; }
+  .intro>div:first-child, .intro .restored-motivation { padding: 20px; margin: 0; }
+  .intro>div:first-child>p:last-child { font-size: 21px; }
+  .restored-laugh { max-width: 900px; margin-left: auto!important; margin-right: auto!important; }
+  .things-to-do-grid { grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr); gap: 18px; }
+  .routine-grid { grid-template-columns: repeat(2,minmax(0,1fr))!important; max-width: none; }
+  .activity-grid { grid-template-columns: repeat(2,minmax(0,1fr))!important; max-width: none; }
+}
+
+/* Phone: one clear column, short navigation labels, and roomy tap targets. */
+@media (max-width: 600px) {
+  .compact-header {
+    display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center;
+    gap: 8px 10px; padding: 14px 16px;
+  }
+  .compact-header .brand { grid-column: 1; grid-row: 1; min-width: 0; font-size: 25px; }
+  .compact-header .brand-mark { width: 38px; height: 38px; margin-right: 7px; }
+  .compact-header .brand span { display: block; margin: 4px 0 0 45px; font-size: 9px; letter-spacing: 1.5px; }
+  .compact-header .account-menu { grid-column: 2; grid-row: 1; margin: 0; }
+  .compact-header .account-menu summary { min-height: 44px; padding: 9px 10px; font-size: 14px; }
+  .compact-header .app-header-slogan { grid-column: 1/-1; grid-row: 2; padding: 8px 4px!important; margin: 0!important; font-size: 15px!important; line-height: 1.4!important; }
+  .compact-header .app-header-slogan span { display: inline; }
+  .compact-header .app-header-slogan span+span { margin-left: 4px; }
+  .compact-header .header-planner-nav {
+    grid-column: 1/-1; grid-row: 3; display: grid!important;
+    grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px!important;
+    padding: 9px; margin: 0!important; background: #fff7fa;
+    border: 1px solid #f0d7e1; border-radius: 15px;
+  }
+  .compact-header .header-planner-nav>button,
+  .compact-header .header-planner-nav>a,
+  .compact-header .header-planner-nav>a.header-packages {
+    grid-column: auto; width: 100%; max-width: none!important; min-width: 0; min-height: 72px;
+    padding: 10px 7px; display: flex; flex-direction: row; justify-content: center;
+    align-items: center; gap: 7px; border-radius: 10px;
+    background: #fff!important; border: 1px solid #f0e0e7!important;
+    color: #842145!important; box-shadow: none!important; text-decoration: none!important;
+  }
+  .compact-header .header-planner-nav .header-nav-icon { width: 21px; height: 21px; }
+  .compact-header .header-planner-nav .header-nav-copy { width: auto; flex: 0 1 auto; }
+  .compact-header .header-planner-nav .header-nav-label { min-height: 0; font-size: 13px; line-height: 1.3; text-align: left; }
+  .compact-header .header-planner-nav .nav-description { display: none!important; }
+  .compact-header .header-planner-nav>a.header-packages { grid-column: 1/-1; min-height: 50px; background: #bd215b!important; color: #fff!important; border-color: #bd215b!important; }
+  .compact-header .header-planner-nav>a.header-packages .header-nav-icon { stroke: #fff; }
+  .compact-header .header-planner-nav .active,
+  .compact-header .header-planner-nav button:hover,
+  .compact-header .header-planner-nav a:not(.header-packages):hover { background: #fff0f6!important; border-color: #e9bdce!important; }
+  .compact-header .header-planner-nav>a.header-packages:hover { background: #971444!important; }
+  main { width: 100%; max-width: none; padding: 18px 16px 36px; }
+  main .app-parent-header { width: 100%; max-width: none; height: clamp(165px,50vw,235px); aspect-ratio: auto; margin: 0 0 5px; border-radius: 17px; overflow: hidden; background: #fbe6ed; }
+  main .planner-parent-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+  .app-photo-credit { margin: 0 2px 14px; font-size: 10px; }
+  main .intro:has(.restored-motivation) { display: grid; grid-template-columns: minmax(0,1fr); gap: 10px; margin: 0 0 10px; }
+  .intro>div:first-child { padding: 15px 17px; background: #fff; border: 1px solid #eee1e7; border-radius: 14px; }
+  .intro>div:first-child>p:first-child { margin: 0 0 4px; font-size: 12px; color: #9e2454; letter-spacing: .04em; }
+  .intro>div:first-child>p:last-child { margin: 0; font: 19px/1.4 Georgia,serif; color: #3e3037; }
+  .intro .restored-motivation { margin: 0; padding: 15px 17px; border-radius: 14px; }
+  .intro .restored-motivation p { margin: 7px 0 0; font-size: 17px; line-height: 1.45; }
+  main .restored-laugh { margin: 0 0 20px!important; padding: 13px 16px!important; border-radius: 14px; }
+  main .restored-laugh p { margin: 4px 0 0; font-size: 15px; }
+  #stage-panel.stage { display: block; margin: 14px 0 18px; padding: 17px; border-radius: 15px; }
+  #stage-panel .stage-heading { margin-bottom: 12px; }
+  #stage-panel .stage-heading h2 { font-size: 21px; }
+  #stage-panel .stage-family-button { display: block; width: 100%; margin: 12px 0; }
+  #stage-panel #children { margin: 10px 0; }
+  #stage-panel>label[for="age"], #stage-panel>#age { display: block; width: 100%; margin: 8px 0; }
+  #stage-panel>label[for="age"] { font-weight: 700; }
+  #stage-panel .multiples-choice, #stage-panel .support-choice { margin: 14px 0 7px; align-items: flex-start; }
+  #stage-panel>p.fine { margin: 0 0 10px 38px; font-size: 12px; line-height: 1.5; }
+  .child-tools-nav { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; padding: 7px; margin: 12px 0 18px; }
+  .child-tools-nav button { min-width: 0; padding: 9px 5px; font-size: 13px; line-height: 1.25; }
+  #today-content { margin-top: 18px; }
+  #today-content>.section-head { display: flex; flex-direction: column; align-items: stretch; gap: 10px; margin: 0 0 13px; }
+  #today-content>.section-head h2 { font-size: 25px!important; }
+  .low-energy-choice { width: 100%; box-sizing: border-box; }
+  .things-to-do-grid { grid-template-columns: minmax(0,1fr); gap: 13px; }
+  .daily-plan, .task-sidecards>.card { min-width: 0; padding: 17px; border-radius: 15px; }
+  .task-sidecards { gap: 13px; }
+  .daily-add-row { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 8px; }
+  .daily-add-row input { width: 100%; min-width: 0; }
+  .routine-grid, .activity-grid, .meal-prep-grid, .things-to-do-grid { grid-template-columns: minmax(0,1fr)!important; gap: 13px; }
+  .routine-grid, .activity-grid { max-width: none; }
+  .activity-card, .routine-grid>.card { min-width: 0; padding: 17px; }
+  .activity-filters { display: grid; grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .activity-filters label, .activity-filters select, .fitness-selects select { width: 100%; max-width: 100%; }
+  .activity-toolbar { align-items: stretch; }
+  .activity-toolbar button, .activity-actions button { min-height: 44px; }
+  .fitness-selects { grid-template-columns: minmax(0,1fr); }
+  .grocery-row { grid-template-columns: 24px minmax(0,1fr); }
+  .grocery-row button { grid-column: 2; justify-self: start; }
+  .handover-columns, .account-summary { grid-template-columns: minmax(0,1fr); }
+  .journal-main, #parent-journal, #meal-prep-section, #content { min-width: 0; }
+  #content>.card, #parent-journal { padding: 18px; }
+  .family-planner-upgrade { padding: 17px; }
+  footer { padding: 20px 0; }
+}
+@media (max-width: 380px) {
+  .compact-header { padding: 12px; }
+  .compact-header .brand { font-size: 22px; }
+  .compact-header .brand-mark { width: 34px; height: 34px; margin-right: 6px; }
+  .compact-header .brand span { margin-left: 40px; font-size: 8px; letter-spacing: 1px; }
+  .compact-header .account-menu summary { font-size: 12px; padding: 8px; }
+  .compact-header .header-planner-nav .header-nav-label { font-size: 12px; }
+  main { padding-left: 12px; padding-right: 12px; }
+}
+
+/* Phone sizing: keep planner controls inside the viewport and easy to tap. */
+@media (max-width: 600px) {
+  main { padding-left: 14px; padding-right: 14px; }
+  .card, .daily-plan, .task-sidecards > .card { min-width: 0; }
+  #content, #parent-journal, .journal-main { overflow-wrap: anywhere; }
+  .daily-add-row { grid-template-columns: minmax(0, 1fr); }
+  .daily-add-row button { width: 100%; min-height: 44px; }
+}
+
+/* Desktop section cards align to a common grid and equal row height. */
+@media (min-width: 1000px) {
+  main { width: min(calc(100% - 96px), 1320px); }
+  .routine-grid,
+  .activity-grid,
+  .meal-prep-grid,
+  .recipe-grid {
+    align-items: stretch;
+    justify-items: stretch;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+  .routine-grid > .card,
+  .activity-grid > .activity-card,
+  .meal-prep-grid > .meal-prep-card,
+  .recipe-grid > .recipe-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+  }
+  .activity-grid > .activity-card .activity-actions,
+  .routine-grid > .card > .actions,
+  .meal-prep-grid > .meal-prep-card > .primary,
+  .recipe-grid > .recipe-card > .recipe-save {
+    margin-top: auto;
+  }
+  .routine-grid > .card h3,
+  .activity-grid > .activity-card h3,
+  .meal-prep-grid > .meal-prep-card h3,
+  .recipe-grid > .recipe-card h3 {
+    line-height: 1.3;
+    min-height: 2.6em;
+  }
+  .recipe-grid .recipe-photo,
+  .recipe-grid .recipe-card > img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .section-head { max-width: 1280px; margin-left: auto; margin-right: auto; }
+  #today-content > .section-head,
+  .things-to-do-grid,
+  #stage-panel.stage { max-width: 1280px; }
+}

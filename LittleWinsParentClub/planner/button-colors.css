@@ -1,0 +1,13 @@
+/* One color hierarchy across the parenting companion. */
+:root{--action-pink:#bd215b;--action-hover:#a71d50;--action-pale:#fff0f5;--action-ink:#852548;--action-line:#dcacc0}
+button,.secondary,.recipe-save,.actions a{background:var(--action-pale)!important;color:var(--action-ink)!important;border-color:var(--action-line)!important;box-shadow:none;border-radius:12px}
+button.primary,a.primary,a.button,button[type="submit"],.compact-header .family-package-links .plans-link,.plan-grid .card button.primary{background:var(--action-pink)!important;color:#fff!important;border-color:var(--action-pink)!important}
+button.secondary,a.secondary,.package-preview button[data-close-preview],.bottom-tools .app-menu nav button{background:var(--action-pale)!important;color:var(--action-ink)!important;border-color:var(--action-line)!important}
+button:hover:not(:disabled),.secondary:hover,.recipe-save:hover,.actions a:hover{background:#fbe0eb!important;color:var(--action-ink)!important;border-color:var(--action-pink)!important}
+button.primary:hover:not(:disabled),a.primary:hover,a.button:hover,button[type="submit"]:hover:not(:disabled),.compact-header .family-package-links .plans-link:hover,.plan-grid .card button.primary:hover{background:var(--action-hover)!important;color:#fff!important;border-color:var(--action-hover)!important}
+.recipe-save[aria-pressed="true"],.favorite-button[aria-pressed="true"],.chip.selected{background:#fbe0eb!important;color:var(--action-ink)!important;border-color:var(--action-pink)!important}
+.bottom-tools summary{background:var(--action-pale);color:var(--action-pink);border-color:var(--action-line)}
+main>nav[aria-label="Planner views"] button,main>nav[aria-label="Planner views"] button.active{background:transparent!important;color:var(--action-pink)!important;border-color:transparent!important}
+main>nav[aria-label="Planner views"] button:hover,main>nav[aria-label="Planner views"] button.active{background:#fbe0eb!important;color:var(--action-ink)!important;border-radius:8px}
+button:disabled,.plan-grid .card button:disabled,.package-preview button:disabled{background:#ece5e9!important;color:#6a5661!important;border-color:#d8cbd2!important;opacity:1!important;box-shadow:none;cursor:not-allowed}
+button:focus-visible,a.primary:focus-visible,a.button:focus-visible{outline:3px solid #852548;outline-offset:3px}

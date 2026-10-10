@@ -1,0 +1,127 @@
+[
+  {
+    "id": "cheeseburger-skillet",
+    "title": "Homemade Hamburger-Helper-Style Skillet",
+    "time": "25 minutes",
+    "servings": 4,
+    "allergens": "Wheat, milk",
+    "ingredients": [
+      "1 lb ground beef",
+      "2 cups dry elbow macaroni",
+      "2½ cups low-sodium beef broth",
+      "1 cup milk",
+      "1 cup shredded cheddar",
+      "1 tsp paprika",
+      "½ tsp garlic powder"
+    ],
+    "steps": [
+      "Brown the ground beef in a large deep skillet, breaking it into small pieces. Check that ground beef reaches 160°F; drain excess fat.",
+      "Add broth, milk, pasta and seasonings. Bring to a gentle simmer, cover and cook about 10–15 minutes, stirring often, until pasta is tender. Add a little water if needed.",
+      "Turn off the heat and stir in cheddar. Let it cool to a suitable eating temperature. Serve a familiar vegetable alongside."
+    ],
+    "image": "vegetable-pasta.jpg"
+  },
+  {
+    "id": "family-taco-night",
+    "title": "Easy Ground-Beef Taco Night",
+    "time": "20 minutes",
+    "servings": 4,
+    "allergens": "Wheat in flour tortillas; milk if using cheese",
+    "ingredients": [
+      "1 lb ground beef",
+      "8 small tortillas",
+      "2 tsp mild taco seasoning",
+      "¼ cup water",
+      "1 cup shredded lettuce",
+      "1 cup shredded cheddar",
+      "½ cup salsa"
+    ],
+    "steps": [
+      "Cook ground beef in a skillet until it reaches 160°F, breaking it into small pieces. Drain excess fat.",
+      "Add taco seasoning and water; simmer 3–5 minutes. Warm tortillas following package directions.",
+      "Put toppings in separate bowls and let each person build a taco or keep familiar components separate. Cool and adapt pieces to each child."
+    ],
+    "image": "bean-cheese-quesadillas.jpg"
+  },
+  {
+    "id": "slow-cooker-chicken-tacos",
+    "title": "Slow-Cooker Salsa Chicken Tacos",
+    "time": "10 minutes prep · about 3–4 hours high / 6–7 hours low",
+    "servings": 4,
+    "allergens": "Wheat in flour tortillas; check salsa labels",
+    "ingredients": [
+      "1½ lb fully thawed boneless chicken breast",
+      "1 cup mild salsa",
+      "½ cup low-sodium chicken broth",
+      "8 small tortillas",
+      "Optional: shredded cheese or mashed avocado"
+    ],
+    "steps": [
+      "Place fully thawed chicken, salsa and broth in the slow cooker. Follow your appliance’s fill and liquid guidance; keep the lid closed while cooking.",
+      "Cook on high about 3–4 hours or low about 6–7 hours, checking the manufacturer’s guidance. Time varies: every piece of chicken must reach 165°F on a food thermometer.",
+      "Shred with two forks and mix into the cooking liquid. Serve in warmed tortillas or with rice, cooled and adapted for your child."
+    ],
+    "image": null
+  },
+  {
+    "id": "slow-cooker-bean-chili",
+    "title": "Easy Slow-Cooker Bean Chili",
+    "time": "10 minutes prep · 3–4 hours high / 6–7 hours low",
+    "servings": 4,
+    "allergens": "Check broth and seasoning labels",
+    "ingredients": [
+      "2 cans (15 oz each) kidney or pinto beans, drained and rinsed",
+      "1 can (15 oz) black beans, drained and rinsed",
+      "1 can (28 oz) crushed tomatoes",
+      "1 cup low-sodium vegetable broth",
+      "1 tsp mild chili powder",
+      "½ tsp cumin"
+    ],
+    "steps": [
+      "Use canned beans, not uncooked dried kidney beans. Add all ingredients to the slow cooker and stir.",
+      "Follow appliance guidance; cook about 3–4 hours on high or 6–7 hours on low until hot throughout. Times vary by cooker.",
+      "Taste and adjust mild seasonings. Serve with rice, a baked potato, or bread. Cool before serving and adapt texture."
+    ],
+    "image": null
+  },
+  {
+    "id": "easy-bean-tacos",
+    "title": "Ten-Minute Bean & Cheese Tacos",
+    "time": "10 minutes",
+    "servings": 4,
+    "allergens": "Wheat in flour tortillas, milk",
+    "ingredients": [
+      "1 can (15 oz) refried beans",
+      "8 small tortillas",
+      "1 cup shredded cheddar",
+      "¼ cup water",
+      "Optional: mild salsa or mashed avocado"
+    ],
+    "steps": [
+      "Warm refried beans with the water in a saucepan, stirring until hot.",
+      "Warm tortillas following package directions. Fill with beans and cheese.",
+      "Offer toppings separately and let the filling cool before serving. This is an easy low-energy dinner; familiar components can stay separate."
+    ],
+    "image": "bean-cheese-quesadillas.jpg"
+  },
+  {
+    "id": "easy-rice-bowls",
+    "title": "Shortcut Chicken & Rice Bowls",
+    "time": "15 minutes",
+    "servings": 4,
+    "allergens": "Check rice, chicken and sauce labels",
+    "ingredients": [
+      "2 cups fully cooked shredded chicken",
+      "2 pouches microwave rice (about 8.8 oz each)",
+      "2 cups frozen vegetables",
+      "¼ cup low-sodium broth",
+      "Optional: a familiar mild sauce"
+    ],
+    "steps": [
+      "Heat rice following package directions and cook frozen vegetables until tender.",
+      "Warm fully cooked chicken with the broth until it reaches 165°F; do not rely on rice cooking time to reheat it.",
+      "Serve components in bowls or separately with an optional familiar sauce. Cool and adapt sizes/textures before serving."
+    ],
+    "image": "carrot-pea-rice.jpg"
+  }
+]

@@ -1,0 +1,11 @@
+/* Exact blog wordmark and icon styling; original app fonts restored. */
+header.compact-header .brand{display:block;font-family:Georgia,serif;font-size:28px;line-height:1.1;text-decoration:none;color:#282236;letter-spacing:-1px;font-weight:700;min-width:190px;gap:0;text-align:left;margin:0 auto 0 0}
+header.compact-header .brand-mark{float:left;margin:0 10px 0 0;width:46px;height:46px;flex-shrink:0}
+header.compact-header .brand span{display:block;font:400 11px/1.5 Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#bd215b;margin:0;white-space:normal}
+@media(max-width:520px){header.compact-header .brand{font-size:25px}}
+/* Retain the mobile action and navigation layout independently of font choice. */
+@media(max-width:600px){.activity-actions{display:grid;grid-template-columns:1fr;gap:10px}.activity-actions button{width:100%;text-align:center}}
+@media(max-width:480px){main>nav[aria-label="Planner views"]{display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}main>nav[aria-label="Planner views"] .nav-star{display:none}main>nav[aria-label="Planner views"] button{font-size:14px;white-space:normal;line-height:1.5;padding:8px 3px}main>nav[aria-label="Planner views"] button::before{content:'✦';font-size:12px;color:#b47a26;margin-right:5px}}
+
+/* Show the shared activity and both faces without a narrow crop. */
+main .app-parent-header{height:auto;max-width:600px;margin:0 auto;background:transparent;aspect-ratio:auto}main .planner-parent-photo{position:static;display:block;width:100%;height:auto;object-fit:contain;object-position:center}

@@ -1,0 +1,90 @@
+/* Companion layouts: phones, tablets, and full desktop screens. */
+body.companion-planner{min-width:0}
+.companion-planner main,.companion-planner header.compact-header{box-sizing:border-box;width:100%;max-width:1280px;margin-left:auto;margin-right:auto}
+.companion-planner main{padding:20px 24px 40px}
+.companion-planner header.compact-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px 24px;padding:24px}
+.companion-planner .compact-header .brand{grid-column:1;grid-row:1;order:0;min-width:0;width:auto;margin:0;justify-content:flex-start;flex-wrap:wrap;white-space:normal;font-size:28px;gap:8px}
+.companion-planner .compact-header .brand-mark{width:52px;height:52px;flex-shrink:0}
+.companion-planner .compact-header .brand>span{font-size:14px;white-space:normal}
+.companion-planner .compact-header .account-menu{grid-column:2;grid-row:1;order:0;align-self:center;margin:0}
+.companion-planner .compact-header .account-menu>summary{min-height:44px;box-sizing:border-box}
+.companion-planner .compact-header .app-header-slogan{grid-column:1;grid-row:2;order:0;width:auto;text-align:left;padding:0!important;font-size:1.1rem!important}
+.companion-planner .compact-header .app-header-slogan span{display:inline!important}
+.companion-planner .compact-header .today-shortcut{grid-column:2;grid-row:2;order:0;margin:0;max-width:none}
+.companion-planner .compact-header nav.header-planner-nav{grid-column:1/-1;grid-row:3;order:0;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px!important;width:100%;padding:4px 0!important;margin:0!important}
+.companion-planner .compact-header nav.header-planner-nav>button{min-height:120px!important;padding:14px 10px!important;gap:8px!important}
+.companion-planner .compact-header .header-nav-icon{width:32px!important;height:32px!important}
+.companion-planner .compact-header .header-nav-label{font-size:1rem}
+.companion-planner .compact-header .header-nav-copy{gap:6px}
+.companion-planner .compact-header nav.header-planner-nav>a.header-packages{width:100%;max-width:none!important;min-height:120px!important;flex-direction:column;align-self:stretch;border-radius:18px!important;padding:14px 10px!important}
+.companion-planner .compact-header .header-packages .header-nav-copy{width:100%;flex:0 1 auto}
+.companion-planner .compact-header .nav-description{font-size:.85rem;line-height:1.4}
+.companion-planner .companion-sync-status{box-sizing:border-box;max-width:1280px;padding:0 24px;margin:8px auto;overflow-wrap:anywhere}
+.companion-planner main .card,.companion-planner .today-start-grid>*,.companion-planner .meal-prep-grid>*,.companion-planner .activity-grid>*,.companion-planner .routine-grid>*{min-width:0;box-sizing:border-box}
+.companion-planner input:not([type=checkbox]),.companion-planner select,.companion-planner textarea{max-width:100%;box-sizing:border-box}
+.companion-planner .simple-add-row,.companion-planner .simple-timer-row,.companion-planner .activity-actions,.companion-planner .walkthrough-actions{flex-wrap:wrap}
+.companion-planner .simple-add-row input{min-width:0;flex:1 1 180px}
+.companion-planner dialog{box-sizing:border-box;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow-y:auto}
+.companion-planner .walkthrough-dialog{width:min(560px,calc(100% - 32px))}
+.companion-planner .simple-task-title,.companion-planner .grocery-row,.companion-planner .card p{overflow-wrap:anywhere}
+@media(min-width:1024px){
+ .companion-planner .today-start-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+ .companion-planner .today-start-grid>.todo-plan,.companion-planner .today-start-grid>.today-dinner-card,.companion-planner .today-start-grid>.today-activity-card{grid-column:auto;grid-row:auto}
+ .companion-planner .meal-prep-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+ .companion-planner .meal-prep-grid .grocery-card{grid-column:auto;order:0}
+ .companion-planner .routine-grid,.companion-planner .activity-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:none;gap:24px}
+ .companion-planner .walkthrough-welcome{justify-content:space-between}
+ .companion-planner #parentClubFrame{min-height:600px;height:75dvh}
+}
+@media(min-width:701px) and (max-width:1023px){
+ .companion-planner header.compact-header{gap:12px 16px;padding:20px}
+ .companion-planner .compact-header nav.header-planner-nav{gap:8px!important}
+ .companion-planner .compact-header nav.header-planner-nav>button,.companion-planner .compact-header nav.header-planner-nav>a.header-packages{padding:12px 6px!important;min-height:128px!important}
+ .companion-planner .compact-header .header-nav-label{font-size:.9rem}
+ .companion-planner .compact-header .nav-description{font-size:.8rem}
+ .companion-planner .today-start-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+}
+@media(max-width:700px){
+ .companion-planner main{padding:12px 16px 32px}
+ .companion-planner header.compact-header{padding:16px;gap:12px}
+ .companion-planner .compact-header .brand{font-size:23px;gap:6px;line-height:1.2}
+ .companion-planner .compact-header .brand-mark{width:40px;height:40px}
+ .companion-planner .compact-header .brand>span{display:block;flex-basis:100%;font-size:12px;letter-spacing:0}
+ .companion-planner .compact-header .account-menu>summary{font-size:.875rem;padding:8px;white-space:nowrap}
+ .companion-planner .compact-header .account-menu{align-self:start}
+ .companion-planner .compact-header .app-header-slogan{grid-column:1/-1;grid-row:2;text-align:center;font-size:1rem!important;margin:0!important}
+ .companion-planner .compact-header .today-shortcut{grid-column:1/-1;grid-row:3;justify-self:stretch;min-height:48px}
+ .companion-planner .compact-header nav.header-planner-nav{grid-row:4;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px!important}
+ .companion-planner .compact-header nav.header-planner-nav>button{min-height:112px!important;padding:12px 8px!important;gap:6px!important}
+ .companion-planner .compact-header .header-nav-label{font-size:.95rem}
+ .companion-planner .compact-header .nav-description{font-size:.8rem;line-height:1.4}
+ .companion-planner .compact-header nav.header-planner-nav>a.header-packages{grid-column:1/-1;flex-direction:row;min-height:48px!important;padding:10px 16px!important;gap:10px!important;border-radius:12px!important}
+ .companion-planner .compact-header .header-packages .header-nav-copy{width:auto;flex:0 1 auto}
+ .companion-planner .compact-header .header-packages .header-nav-icon{width:24px!important;height:24px!important}
+ .companion-planner .companion-sync-status{padding:0 16px;font-size:.85rem}
+ .companion-planner .today-start-grid,.companion-planner .meal-prep-grid,.companion-planner .recipe-grid,.companion-planner .routine-grid,.companion-planner .activity-grid{grid-template-columns:minmax(0,1fr)!important;gap:16px}
+ .companion-planner .today-start-grid>.todo-plan,.companion-planner .today-start-grid>.today-dinner-card,.companion-planner .today-start-grid>.today-activity-card,.companion-planner .meal-prep-grid .grocery-card{grid-column:auto;grid-row:auto}
+ .companion-planner input:not([type=checkbox]),.companion-planner select,.companion-planner textarea{font-size:16px}
+ .companion-planner .today-start-heading{display:flex;align-items:flex-start;flex-wrap:wrap;gap:12px}
+ .companion-planner .today-start-heading .low-energy-choice{margin:0;min-height:44px;box-sizing:border-box}
+ .companion-planner .simple-timer-row{justify-content:space-between;gap:8px}
+ .companion-planner .today-activity-card .activity-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:8px!important}
+ .companion-planner .today-activity-card .activity-actions>*{width:100%;margin:0;box-sizing:border-box}
+ .companion-planner .child-tools-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:8px}
+ .companion-planner .child-tools-nav button{font-size:.875rem;padding:10px 4px;white-space:normal;overflow-wrap:anywhere;min-width:0}
+ .companion-planner .walkthrough-welcome{display:block!important}
+ .companion-planner .walkthrough-welcome[hidden]{display:none!important}
+ .companion-planner .walkthrough-welcome-actions{margin-top:12px}
+ .companion-planner dialog{padding:18px;max-height:calc(100dvh - 24px)}
+ .companion-planner #parentClubFrame{min-height:480px;height:75dvh}
+}
+@media(max-width:360px){
+ .companion-planner main,.companion-planner header.compact-header{padding-left:12px;padding-right:12px}
+ .companion-planner .compact-header .brand{font-size:20px}
+ .companion-planner .compact-header .brand-mark{width:32px;height:32px}
+ .companion-planner .simple-add-row>button{width:100%}
+}
+/* Comfort settings remain available at every screen size. */
+body.companion-planner.calm-view .compact-header nav.header-planner-nav>button{min-height:90px!important}
+body.companion-planner.larger-text .compact-header nav.header-planner-nav>*{height:auto!important;min-height:120px!important}
+@media(min-width:701px){body.companion-planner.larger-text .compact-header nav.header-planner-nav{grid-template-columns:repeat(3,minmax(0,1fr))}}

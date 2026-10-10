@@ -1,0 +1,62 @@
+/* Date and encouragement form the companion's opening hero. */
+.companion-planner .compact-header .app-hero{grid-column:1/-1;grid-row:3;order:0;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:center;width:100%;box-sizing:border-box;margin:4px 0 8px!important;padding:28px 32px;background:linear-gradient(115deg,#fff6ed,#f9e5ef);border:1px solid #e8cbd3;border-radius:24px;box-shadow:0 8px 24px #6b374210}
+.companion-planner .app-hero[hidden]{display:none!important}
+.companion-planner .app-hero .hero-welcome{min-width:0}
+.companion-planner .app-hero #date{font:700 .85rem/1.5 Arial,Helvetica,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#74603e;margin:0 0 12px}
+.companion-planner .app-hero h1{font:400 clamp(1.8rem,3vw,2.6rem)/1.2 Georgia,serif;color:#6c2848;margin:0 0 12px;letter-spacing:-.02em}
+.companion-planner .app-hero .hero-welcome>p:last-child{font-size:1rem;font-weight:400;line-height:1.6;color:#57434b;max-width:40ch;margin:0}
+.companion-planner .app-hero .daily-note{box-sizing:border-box;min-width:0;margin:0;padding:22px 24px;background:#ffffffb8;border:1px solid #e3c5ca;border-left:4px solid #b68a37;border-radius:14px;box-shadow:none}
+.companion-planner .app-hero .daily-note .kicker{color:#85632c;font-size:.75rem;letter-spacing:.08em}
+.companion-planner .app-hero .daily-note p{color:#64344a;font:400 clamp(1.15rem,2vw,1.45rem)/1.55 Georgia,serif;margin:10px 0 0}
+.companion-planner .compact-header nav.header-planner-nav{grid-row:4}
+/* Sage navigation complements the rose brand and gold details. */
+.companion-planner .compact-header nav.header-planner-nav>button{background:#edf3ed!important;border:2px solid #afc2b2!important;color:#365746!important;box-shadow:0 4px 12px #36574612!important}
+.companion-planner .compact-header nav.header-planner-nav>button .header-nav-label{color:#365746}
+.companion-planner .compact-header nav.header-planner-nav>button .header-nav-icon{color:#476f5a;stroke:#476f5a;filter:none}
+.companion-planner .compact-header nav.header-planner-nav>button .nav-description{color:#4d6556}
+.companion-planner .compact-header nav.header-planner-nav>button:hover{background:#e0ece2!important;border-color:#658b70!important;box-shadow:0 6px 16px #36574622!important}
+.companion-planner .compact-header nav.header-planner-nav>button.active{background:#d4e4d7!important;border-color:#476f5a!important;color:#284635!important;box-shadow:inset 0 -3px 0 #b68a37,0 4px 12px #36574618!important}
+.companion-planner .compact-header nav.header-planner-nav>button:focus-visible{outline:3px solid #476f5a;outline-offset:3px}
+/* A paper planner with a notebook margin and checkable ruled entries. */
+.companion-planner .planner-page{position:relative;padding:26px 22px 22px 34px;background:#fffdf7!important;border:1px solid #e0d5be!important;border-radius:6px 18px 18px 6px!important;box-shadow:3px 4px 0 #f2eadb,6px 8px 0 #e9ddc8,0 12px 28px #6b533b16!important;overflow:visible}
+.companion-planner .planner-page::before{content:"";position:absolute;left:12px;top:20px;bottom:20px;width:6px;background:radial-gradient(circle,#c9baa3 2px,transparent 2.5px) center top/6px 26px repeat-y;pointer-events:none}
+.companion-planner .planner-page::after{content:"";position:absolute;left:26px;top:0;bottom:0;width:1px;background:#e9bac7;pointer-events:none}
+.companion-planner .planner-page-head{display:block;background:transparent;padding:0 0 12px;border:0;border-bottom:2px solid #b68a3766;box-shadow:none;margin:0 0 12px}
+.companion-planner .planner-page-head .kicker{font-size:.7rem;color:#80653b;letter-spacing:.08em;line-height:1.5;margin:0 0 6px}
+.companion-planner .planner-page-head h3{font:400 1.6rem/1.25 Georgia,serif;color:#64344a;margin:0}
+.companion-planner .planner-page .task-list-intro{color:#675b4b;font-size:.9rem;line-height:1.5}
+.companion-planner .planner-page .simple-add-task{padding:12px 0;background:transparent;border:0;border-radius:0}
+.companion-planner .planner-page .simple-add-task>label{margin-top:0}
+.companion-planner .planner-page .simple-add-row input{background:#fffefb;border-color:#d5c8b1}
+.companion-planner .planner-page .task-list-count{padding:10px 0;border-top:1px solid #d9cdb7;border-bottom:1px solid #d9cdb7;text-transform:uppercase;font-size:.75rem;letter-spacing:.04em;color:#77623f}
+.companion-planner .planner-page .simple-task{margin:0;padding:16px 0;background:transparent;border:0;border-bottom:1px solid #d9cdb7;border-radius:0;box-shadow:none}
+.companion-planner .planner-page .simple-task.timer-active{background:#f4f6eb;border-bottom-color:#8aa381}
+.companion-planner .planner-page .simple-task-heading{align-items:center}
+.companion-planner .planner-page .simple-task-heading input{accent-color:#476f5a;box-sizing:border-box}
+.companion-planner .planner-page .simple-task-heading label{margin:0;color:#443e34;font-weight:500;line-height:1.6}
+.companion-planner .planner-page .task-done .simple-task-title{color:#827c70;text-decoration:line-through}
+.companion-planner .planner-page .simple-timer-row{margin:8px 0 0 36px}
+.companion-planner .planner-page .simple-timer-row output{font-size:.8rem;color:#746952}
+.companion-planner .planner-page .simple-timer-row button{font-size:.8rem;padding:8px 10px;margin:0;min-height:44px}
+.companion-planner .planner-page .task-options{border-color:#e6ddcc}
+.companion-planner .planner-page .task-options>summary{font-size:.85rem;color:#746952}
+.companion-planner .planner-page .task-empty{font:italic 1rem/1.6 Georgia,serif;color:#7b705e;margin:18px 0}
+.companion-planner .planner-blank-lines span{display:block;height:34px;border-bottom:1px solid #e4dbc9}
+.companion-planner .planner-page .simple-alert-area{border-top:1px solid #d9cdb7;padding-top:12px;margin-top:18px}
+@media(max-width:700px){
+ .companion-planner .compact-header .app-hero{grid-row:3;grid-template-columns:minmax(0,1fr);gap:16px;padding:20px;margin:0!important;border-radius:18px}
+ .companion-planner .compact-header .today-shortcut{grid-row:4}
+ .companion-planner .compact-header nav.header-planner-nav{grid-row:5}
+ .companion-planner .app-hero h1{font-size:1.9rem}
+ .companion-planner .app-hero .daily-note{padding:16px 18px}
+ .companion-planner .app-hero .daily-note p{font-size:1.15rem}
+ .companion-planner .planner-page{padding:22px 16px 18px 30px}
+ .companion-planner .planner-page::after{left:23px}
+ .companion-planner .planner-page::before{left:10px}
+ .companion-planner .planner-page .simple-timer-row{margin-left:0}
+}
+body.companion-planner.calm-view .app-hero{background:#fff;box-shadow:none;border:1px solid #d7d2d5}
+body.companion-planner.calm-view .compact-header nav.header-planner-nav>button{background:#fff!important;color:#365746!important;border:1px solid #a7b5a9!important;box-shadow:none!important}
+body.companion-planner.calm-view .compact-header nav.header-planner-nav>button.active{background:#edf3ed!important;border:2px solid #476f5a!important}
+body.companion-planner.calm-view .planner-page{background:#fff!important;box-shadow:none!important;border-radius:10px!important}
+body.companion-planner.calm-view .planner-page::before,body.companion-planner.calm-view .planner-page::after{display:none}
