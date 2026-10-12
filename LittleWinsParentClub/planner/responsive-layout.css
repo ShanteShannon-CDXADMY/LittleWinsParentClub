@@ -88,3 +88,19 @@ body.companion-planner{min-width:0}
 body.companion-planner.calm-view .compact-header nav.header-planner-nav>button{min-height:90px!important}
 body.companion-planner.larger-text .compact-header nav.header-planner-nav>*{height:auto!important;min-height:120px!important}
 @media(min-width:701px){body.companion-planner.larger-text .compact-header nav.header-planner-nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Compact planner sections on phones to reduce vertical travel. */
+@media(max-width:700px){
+ .companion-planner main{padding:10px 14px 24px}
+ .companion-planner header.compact-header{padding:12px 14px;gap:8px 12px}
+ .companion-planner .compact-header nav.header-planner-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px!important}
+ .companion-planner .compact-header nav.header-planner-nav>button{min-height:76px!important;padding:8px 5px!important;gap:4px!important;border-radius:12px!important}
+ .companion-planner .compact-header .header-nav-icon{width:24px!important;height:24px!important}
+ .companion-planner .compact-header .header-nav-copy{gap:2px}
+ .companion-planner .compact-header .header-nav-label{font-size:.82rem;line-height:1.15}
+ .companion-planner .compact-header .nav-description{display:none}
+ .companion-planner .compact-header nav.header-planner-nav>a.header-packages{grid-column:1/-1;min-height:44px!important;padding:8px 12px!important}
+ .companion-planner .today-start-grid,.companion-planner .meal-prep-grid,.companion-planner .recipe-grid,.companion-planner .routine-grid,.companion-planner .activity-grid{gap:10px}
+ .companion-planner main .card{padding:16px!important}
+ .companion-planner main section:not(.walkthrough-welcome){scroll-margin-top:12px}
+}
